@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="801" height="604" viewBox="0 0 801 604">
+    <defs>
+        <filter id="a" width="172.3%" height="160.5%" x="-36.2%" y="-30.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+        </filter>
+        <filter id="b" width="180.9%" height="167.6%" x="-40.4%" y="-33.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+        </filter>
+        <filter id="c" width="196%" height="177.3%" x="-48%" y="-38.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+        </filter>
+        <filter id="d" width="196%" height="177.3%" x="-48%" y="-38.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+        </filter>
+        <filter id="e" width="196%" height="177.3%" x="-48%" y="-38.7%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+        </filter>
+        <filter id="f" width="233.3%" height="204.3%" x="-66.7%" y="-52.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+        </filter>
+        <filter id="g" width="163.4%" height="177.8%" x="-31.7%" y="-38.9%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(2 -63)">
+        <circle cx="461" cy="146" r="9" stroke="#DDDBE1" stroke-width="3"/>
+        <circle cx="788" cy="318" r="9" stroke="#DDDBE1" stroke-width="3" opacity=".5"/>
+        <circle cx="103.5" cy="525.5" r="10.5" stroke="#DDDBE1" stroke-width="3"/>
+        <circle cx="599.5" cy="655.5" r="9.5" stroke="#DDDBE1" stroke-width="3"/>
+        <path stroke="#DDDBE1" stroke-width="3" d="M191 226.529L207 224l-3.94 18z"/>
+        <path stroke="#DDDBE1" stroke-width="3" d="M154.453 85.859l12.738 3.18-8.64 12.182z" opacity=".5"/>
+        <path stroke="#DDDBE1" stroke-width="3" d="M329.618 488.817l-15.078 1.46 4.81-17.228z"/>
+        <path stroke="#DDDBE1" stroke-width="3" d="M341.746 602.699l12.446-2.766-2.252 14.884z" filter="url(#a)" transform="rotate(25 347.969 607.375)"/>
+        <path stroke="#DDDBE1" stroke-width="3" d="M647.77 360.445l11.129-2.474-2.014 13.311z" filter="url(#b)" transform="rotate(-178 653.334 364.627)"/>
+        <path stroke="#DDDBE1" stroke-width="3" d="M675 58.258L687.803 56l2.605 14.772-12.803 2.258z"/>
+        <path stroke="#DDDBE1" stroke-width="2" d="M416.835 566.456h8.33v10.346h-8.33z" filter="url(#c)" transform="rotate(-10 421 571.629)"/>
+        <path stroke="#DDDBE1" stroke-width="2" d="M1.835 206.645h8.33v10.346h-8.33z" filter="url(#d)" transform="rotate(11 6 211.818)"/>
+        <path stroke="#DDDBE1" stroke-width="2" d="M625.911 583.7h8.33v10.346h-8.33z" filter="url(#e)" transform="rotate(11 630.076 588.873)"/>
+        <path stroke="#DDDBE1" stroke-width="2" d="M764.59 448.52h6v7.669h-6z" filter="url(#f)" transform="rotate(-10 767.59 452.355)"/>
+        <path fill="#DDDBE1" fill-rule="nonzero" d="M601.4 48.8l1.8-2.4 21.6 16.2L623 65zM245.366 503.424l1.642 2.092-16.246 12.502-1.642-2.092zM160.66 291.224l1.641 2.092-16.246 12.502-1.642-2.092zM678.66 245.224l1.641 2.092-16.246 12.502-1.642-2.092z"/>
+        <path fill="#DDDBE1" fill-rule="nonzero" d="M124.443 578.449l1.689-2.252 17.228 13.182-1.689 2.251z" filter="url(#g)" transform="scale(1 -1) rotate(-75 -627.07 0)"/>
+    </g>
+</svg>

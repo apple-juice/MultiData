@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="716" height="77" viewBox="0 0 716 77">
+    <defs>
+        <rect id="a" width="686" height="47" rx="6"/>
+        <filter id="b" width="107.3%" height="206.4%" x="-3.6%" y="-42.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+        </filter>
+        <linearGradient id="c" x1="70.161%" x2="21.006%" y1="4.177%" y2="89.312%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".176"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="e" x1="86.139%" x2="40.234%" y1="35.274%" y2="80.027%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".127"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(15 10)">
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        <use fill="#41A5F5" xlink:href="#a"/>
+        <ellipse cx="267.5" cy="9.87" fill="url(#c)" mask="url(#d)" rx="56.5" ry="53.11"/>
+        <path fill="url(#e)" d="M116.603 46.266c30.92 0 68.118-43.416 68.118-72.521 0-29.105 5.44-90.721-41.295-80.161-12.03 2.718-36.939 56.707-54.286 73.679-25.208 24.664-73.125-6.62-100.768 6.482-15.96 7.564-50.045 49.881-15.59 67.163 30.115 15.105 129.401 5.358 143.821 5.358z" mask="url(#d)" transform="rotate(28 71.415 -29.13)"/>
+        <path fill="url(#e)" d="M602.13 123.54c39.536 0 87.103-55.517 87.103-92.734 0-37.217 6.956-116.006-52.805-102.503-15.383 3.476-47.234 72.512-69.416 94.215-32.235 31.539-93.506-8.466-128.854 8.288-20.409 9.673-63.994 63.785-19.935 85.884 38.508 19.315 165.467 6.85 183.906 6.85z" mask="url(#d)" transform="scale(1 -1) rotate(28 653.163 0)"/>
+    </g>
+</svg>

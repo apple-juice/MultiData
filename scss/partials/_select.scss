@@ -1,0 +1,144 @@
+.dropdown-menu {
+  border: 0;
+  border-top: 1px solid #e7e3e3;
+  box-shadow: 0 14px 18px 0 rgba(59, 62, 66, 0.12);
+  border-radius: 0 0 8px 8px;
+  margin-top: 0;
+  max-height: 205px;
+  width: 100%;
+  overflow: auto;
+
+  > li {
+    > a {
+      letter-spacing: 0.2px;
+      text-align: left;
+      color: #585351;
+      cursor: pointer;
+
+      @include rem(font-size, 14px);
+      @include rem(padding, 9px 18px 9px 42px);
+    }
+
+    &.selected {
+      > a {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .description {
+    display: block;
+    color: #a39b9b;
+    font-weight: normal;
+
+    @include rem(font-size, 12px);
+  }
+
+  &.inner {
+    position: static;
+    float: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.search__field {
+  .dropdown-menu {
+    > li {
+      > a {
+        font-weight: 600;
+      }
+    }
+    &.open {
+      display: block;
+
+      ~ .form-control {
+        border-radius: 8px 0 0 0;
+      }
+    }
+  }
+}
+
+.bootstrap-select.btn-group {
+  .dropdown-toggle {
+    background-color: #fff;
+    border-radius: 0;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #585351;
+    font-family: $ff-alt;
+    box-shadow: none !important;
+
+    @include rem(font-size, 15px);
+    @include rem(padding, 15px 16px 18px 42px);
+
+    &:hover {
+      background-color: #fff !important;
+      color: #585351 !important;
+    }
+
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+      background-color: #fff !important;
+      color: #585351 !important;
+    }
+
+    .caret {
+      right: 17px;
+      margin-top: -4px;
+    }
+  }
+
+  .dropdown-menu {
+    border: 0;
+    border-top: 1px solid #e7e3e3;
+    box-shadow: 0 14px 18px 0 rgba(59, 62, 66, 0.12);
+    border-radius: 0 0 8px 8px;
+    margin-top: 0;
+
+    > li {
+      > a {
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #585351;
+
+        @include rem(font-size, 14px);
+        @include rem(padding, 9px 18px 9px 42px);
+      }
+
+      &.selected {
+        > a {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.open {
+
+    }
+  }
+
+  &.open {
+    .caret {
+      margin-top: -6px;
+      @include rotate(180);
+    }
+  }
+}
+
+.caret {
+  border: 0;
+  font-size: 8px;
+  color: #d8bfbb;
+  width: auto;
+  height: auto;
+
+  &:before {
+    font-family: 'icons' !important;
+    content: "\e901";
+  }
+}

@@ -1,0 +1,22 @@
+@import "partials/mixins";
+@import "partials/variables";
+
+@import "partials/icons";
+@import "partials/general";
+@import "partials/header";
+@import "partials/content";
+@import "partials/animate";
+@import "partials/tabs";
+@import "partials/blocks";
+@import "partials/offers";
+@import "partials/apps";
+@import "partials/form";
+@import "partials/footer";
+@import "partials/responsive";
+@import "partials/modal";
+@import "select/bootstrap-select";
+@import "partials/select";
+
+.app {
+  overflow: hidden;
+}

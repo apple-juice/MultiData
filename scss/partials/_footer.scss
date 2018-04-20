@@ -1,0 +1,171 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index:10;
+  text-align: left;
+  background: $alt_multi_blue;
+  font-family: $ff;
+
+	.container {
+    max-width: 100%;
+		@include rem(width, 1050px);
+  }
+
+  .btn-light {
+    width: 100%;
+    max-width: 225px;
+    text-align: left;
+
+    .fa {
+      float: right;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-bottom: solid 2px rgba(#fff, .35);
+
+    @include rem(margin, 29px 0 20px 0)
+  }
+
+  &__inner {
+    @include rem(padding-top, 80px);
+    @include rem(padding-bottom, 30px);
+  }
+
+  &__logo {
+    img {
+      @include rem(width, 80px);
+    }
+  }
+
+  .social_list {
+    @include rem(margin-top, 25px);
+  }
+  
+  &__about_us, &__socials {
+    @include clearfix;
+  }
+
+  &__text {
+    font-family: $ff;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    color: #cde0e9;
+
+    @include rem(font-size, 12px);
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $ff;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.2em;
+    color: #fff;
+
+    @include rem(margin-bottom, 5px);
+    @include rem(font-size, 12px);
+    @include rem(line-height, 23px);
+    @include rem(margin-right, 8px);
+    @include rem(width, 120px);
+
+    + .footer__text, + .social_list {
+      overflow: hidden;
+    }
+  }
+
+	&__contacts {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: left;
+    font-family: $ff;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    color: #fffdfb;
+
+    @include rem(font-size, 13px);
+    @include rem(margin-bottom, 10px);
+    @include rem(margin-top, 18px);
+
+    li {
+      @include rem(margin-bottom, 3px);
+    }
+
+		a {
+      @include rem(font-size, 13px);
+      @include rem(line-height, 20px);
+      color: #fff;
+      text-decoration: none;
+			display: inline-block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+		}
+
+		.fa, img {
+			@include rem(font-size, 36px);
+			@include rem(padding, 0 25px);
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		img {
+			@include rem(width, 90px);
+		}
+	}
+
+	.copy {
+		span {
+			display: block;
+      line-height: 1.77;
+      letter-spacing: 0.2px;
+      font-weight: 600;
+
+			@include rem(font-size, 13px)
+		}
+
+		img {
+			opacity: .2;
+			@include rem(margin-bottom, 15px);
+		}
+	}
+
+  @media (max-width: 767px) {
+    .btn-secondary {
+      width: 160px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .footer__logo {
+      margin-bottom: 20px;
+    }
+
+    .btn.btn-light {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

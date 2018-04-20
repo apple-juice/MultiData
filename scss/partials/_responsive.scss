@@ -1,0 +1,96 @@
+@media(min-width:768px) {
+  html {
+    font-size: 	16px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 375px !important;
+    width: 100% !important;
+  }
+
+  .header {
+    .text-center {
+      text-align: left !important;
+
+      img {
+        width: 72px;
+      }
+    }
+
+    .container {
+      max-width: 368px !important;
+    }
+
+    .btn-default {
+      min-width: 130px;
+
+      .fa {
+        float: right;
+      }
+    }
+  }
+
+  .social_list__item {
+    margin-right: 26px;
+
+    a {
+      font-size: 24px;
+    }
+  }
+
+  .footer {
+    hr {
+      margin-top: 12px;
+    }
+
+    .container {
+      max-width: 364px !important;
+    }
+
+    .copy img {
+      margin-top: 3px;
+    }
+
+    &__inner {
+      padding-top: 35px;
+      padding-bottom: 20px;
+    }
+
+    &__about_us {
+      margin-top: 30px;
+      margin-bottom: 28px;
+    }
+
+    &__title {
+      margin-bottom: 14px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    &__text {
+      line-height: 1.5;
+    }
+
+    &__contacts {
+      margin-top: 12px;
+
+      li a {
+        text-decoration: underline;
+      }
+    }
+
+    &__logo img {
+      width: 78px;
+    }
+
+    .btn {
+      max-width: none;
+      font-size: 15px;
+      padding: 15px 23px;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.offers_list {
+  @media all and (min-width: 768px) {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    > div {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.list_header {
+  @include rem(font-size, 18px);
+  @include rem(line-height, 25px);
+  @include rem(margin-bottom, 14px);
+
+  h4 {
+    margin-bottom: 0;
+    font-weight: 600;
+    text-align: left;
+    color: #585351;
+
+    @include rem(line-height, 25px);
+  }
+
+  a {
+    font-weight: 600;
+    color: #339bec;
+    margin-left: 10px;
+  }
+}
+
+.list_item {
+  @include rem(margin-bottom, 42px);
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $alt_multi_blue;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+
+    @include rem(margin-bottom, 9px);
+
+    img {
+      width: 100%;
+
+      @include transition(transform 1s ease);
+    }
+
+    a {
+      &:hover {
+        img {
+          @include scale(1.05);
+        }
+      }
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__title {
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.4px;
+    color: $text_darkbrown;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+
+  &__place {
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.3px;
+    color: $text_darkbrown;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+
+    &__place {
+      font-size: 13px;
+    }
+  }
+}
+
+.place_info {
+  @include clearfix;
+  
+  &__type {
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__price {
+    float: right;
+
+    @include rem(padding-left, 10px);
+  }
+}

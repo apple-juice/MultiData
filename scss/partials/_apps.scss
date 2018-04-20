@@ -1,0 +1,47 @@
+.link_apps {
+  overflow: hidden;
+  padding: 2px 0;
+
+  height: 24px;
+
+  @include clearfix;
+  
+  &__more {
+    float: right;
+    margin-left: 10px;
+
+    @include rem(margin-right, -8px)
+  }
+
+  &__item {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 6px;
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 4px;
+      vertical-align: top;
+
+      @include transition(transform .2s ease-in);
+    }
+
+    a {
+      line-height: 0;
+      font-size: 0;
+      display: block;
+
+      &:hover {
+        img {
+          @include transform(translate(0, -2px));
+        }
+      }
+    }
+  }
+}

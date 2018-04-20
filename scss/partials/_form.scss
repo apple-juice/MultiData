@@ -1,0 +1,246 @@
+.btn {
+  border-radius: 5px;
+  font-family: $ff-alt;
+  text-align: center;
+
+  @include transition($transition);
+}
+
+.btn-default,
+.btn-light {
+  background-color: #f6f6f6;
+  color: $multi_blue;
+  border: 0;
+  font-weight: bold;
+  line-height: 1.53;
+  letter-spacing: 0.2px;
+
+  @include rem(font-size, 15px);
+  @include rem(padding, 8px 16px);
+
+  .fa {
+    color: #dcdcdc;
+    display: inline-block;
+    vertical-align: middle;
+
+    @include rem(font-size, 20px);
+    @include rem(margin-left, 7px);
+  }
+
+  &:hover, &:active, &:focus {
+    background-color: #f1f1f1 !important;
+    color: $multi_blue !important;
+    box-shadow: none!important;
+  }
+
+  &:active {
+    background-color: #eaeaea !important;
+  }
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #2a9af3;
+  border: 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+
+  @include rem(font-size, 18px);
+  @include rem(padding, 11px 20px 14px);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #56aff6 !important;
+  }
+
+  img {
+    @include rem(margin-left, 22px);
+  }
+}
+
+.btn-secondary {
+  background-color: rgba(223, 234, 251, 0.25);
+  color: #2a9af3;
+
+  img {
+    @include rem(margin-left, 0);
+    @include rem(margin-right, 6px);
+
+    position: relative;
+    top: -1px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #2a9af3;
+    background-color: rgba(223, 234, 251, 0.5) !important;
+  }
+
+  .footer & {
+    color: #fff;
+    background-color: #2a9af3;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+      background-color: #1f89dd !important;
+    }
+  }
+}
+
+.btn-green {
+  border-radius: 4px;
+  background-color: #52c87d;
+  box-shadow: 0 6px 18px 0 rgba(19, 40, 54, 0.12);
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+
+  @include rem(padding, 13px 20px);
+  @include rem(font-size, 16px);
+
+  .icon {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+
+    @include rem(margin-top, -7px);
+    @include rem(right, 18px);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    background-color: #63ce8a;
+  }
+}
+
+.btn-light {
+  background: rgba(#fff, .25);
+  color: #fff;
+
+  @include rem(padding, 9px 12px 9px 23px);
+
+
+  .fa {
+    color: #fff;
+  }
+
+  &:hover, &:active, &:focus {
+    background: rgba(#fff, .4) !important;
+    color: #fff !important;
+  }
+
+  + .btn-light {
+    @include rem(margin-top, 15px);
+  }
+}
+
+.btn-icon {
+  background: transparent;
+  color: #d5cbcb !important;
+  line-height: normal;
+
+  @include rem(font-size, 17px);
+  @include rem(padding, 0px 8px);
+
+  &:hover {
+    color: $alt_multi_blue !important;
+  }
+}
+
+.form-control {
+	position: relative;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 1px #dbdbdb;
+  box-shadow: none;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+
+  @include rem(font-size, 15px);
+  @include rem(height, 38px);
+  @include rem(padding, 4px 16px 5px);
+
+  &:focus {
+		outline: none;
+		box-shadow: none;
+    border-color: $alt_multi_blue;
+	}
+
+  &.error {
+    border-color: $multi_red !important;
+  }
+
+	@include placeholder {
+    color: #787c82;
+	}
+}
+
+textarea.form-control {
+  @include rem(padding, 10px 16px 11px);
+  @include rem(height, 157px);
+
+  resize: none;
+}
+
+.form_contact {
+
+}
+
+.form-group {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.success_message {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.53;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #808d9c;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.success_title {
+  text-align: center;
+}
+
+.show_if_success {
+  display: none;
+}
+
+.form-success {
+  .show_if_success {
+    display: block;
+  }
+
+  .hide_if_success {
+    display: none !important;
+  }
+}
+
+label.error {
+  display: none !important;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  background: transparent !important;
+  font-size: 12px;
+  padding: 0 !important;
+  font-weight: normal !important;
+  color: $multi_red !important;
+}

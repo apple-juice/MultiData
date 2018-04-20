@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Multi Place</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css?v1">
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+<div class="app">
+  <section class="hero_block">
+    <div class="cloud cloud--1" data-bottom-top="transform: translateZ(0) translateY(10%); " data-top-bottom="transform: translateZ(0) translateY(-5%);" ></div>
+    <div class="decor" data-bottom-top="transform: translateZ(0) translateY(10%); " data-top-bottom="transform: translateZ(0) translateY(-20%);"></div>
+    <div class="cloud cloud--2"  data-bottom-top="transform: translateZ(0) translateY(50%); " data-top-bottom="transform: translateZ(0) translateY(-50%);"></div>
+    <div class="cloud cloud--2-alt"></div>
+    <div class="container">
+      <div class="hero_block__header">
+        <div class="hero_block__right pull-right">
+          <a data-toggle="modal" href="#contacts" class="btn btn-secondary"><img src="images/email.svg" width="18" alt="email"> Let’s chat</a>
+        </div>
+        <div class="hero_block__logo">
+          <a href="http://www.multi.nyc" target="_blank"><img src="images/text-logo.svg" width="80" alt="multi"></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="hero_block__title">Surfacing Points of Super-Interest</h1>
+          <p class="hero_block__lead">We power unique local experiences with <b>place data</b> that’s <b>social, actionable, and accurate</b>.</p>
+
+          <button data-toggle="modal" data-target="#file" class="btn btn-primary">
+            Download Sample Data
+            <img src="images/download.svg" alt="download" width="19">
+          </button>
+        </div>
+        <div class="col-md-5">
+          <div class="hero_block__img">
+            <img src="images/hero.png" alt="main_img" width="576" height="425">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="content">
+    <section class="section">
+      <div class="cloud cloud--3"  data-bottom-top="transform: translateZ(0) translateY(20%); " data-top-bottom="transform: translateZ(0) translateY(0%);"></div>
+      <div class="cloud cloud--4"  data-bottom-top="transform: translateZ(0) translateY(40%); " data-top-bottom="transform: translateZ(0) translateY(-40%);"></div>
+
+      <div class="container">
+        <div class="text-center section_heading">
+          <div class="label label--red">Our numbers</div>
+          <h3>A complete digital picture of local businesses</h3>
+        </div>
+
+        <div class="features">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="features_item">
+                <div class="features_item__accent" style="background-image: url(images/objects/shape_blue.svg)">600k</div>
+                <div class="features_item__title">Restaurants, bars and cafés</div>
+                <div class="features_item__text">These categories are our  bread and butter. The majority of listings are rich with social, delivery, reservation and booking links.</div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="features_item">
+                <div class="features_item__accent" style="background-image: url(images/objects/shape_red.svg)">22+</div>
+                <div class="features_item__title">Apps, websites and service links</div>
+                <div class="features_item__text">We go beyond phone number and website url. For each POI we surface unique URLs, IDs, and stats across the following categories:</div>
+                <div class="features_item__tags">
+                  <div class="tag tag--magenta">Reviews</div>
+                  <div class="tag tag--light-blue">Social Media</div>
+                  <div class="tag tag--pink">Reservations</div>
+                  <div class="tag tag--yellow">Booking</div>
+                  <div class="tag tag--green">Delivery apps</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="features_item">
+                <div class="features_item__accent" style="background-image: url(images/objects/shape_green.svg)">120</div>
+                <div class="features_item__title">Sources</div>
+                <div class="features_item__text">We compile all this source data, normalize it, then check across more sources to accurately report open/closed status. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--padding">
+      <div class="cloud cloud--5"  data-bottom-top="transform: translateZ(0) translateY(5%); " data-top-bottom="transform: translateZ(0) translateY(-5%);"></div>
+
+      <div class="container text-center">
+        <h4>Our Business and Point of Interest listings feature unique URLs across:</h4>
+        <img src="images/logos.png" alt="logo" class="img-responsive marginauto hidden-xs">
+        <img src="images/logos_mobile.png" alt="logo" class="img-responsive marginauto visible-xs">
+      </div>
+    </section>
+
+    <section class="section section--padding">
+      <div class="cloud cloud--6"  data-bottom-top="transform: translateZ(0) translateY(10%); " data-top-bottom="transform: translateZ(0) translateY(-5%);"></div>
+
+      <div class="container">
+        <div class="section_heading">
+          <div class="label label--blue">Focused on social</div>
+          <h3>Layering social onto location experiences</h3>
+          <p class="hero_block__lead">For each Point of Interest, we find out what social platforms they’re on and surface the unique ID, URL, handle and post counts over time. These platforms are already how local businesses are reaching customers, reflected in the percent of listings that have these social attributes.</p>
+        </div>
+
+        <div class="percentage_block">
+          <div class="percentage_block__row">
+            <div class="percentage_block__left"></div>
+            <div class="percentage_block__right">
+              <div class="label label--blue_tr">Percent of multi places on each platform</div>
+            </div>
+          </div>
+          <div class="percentage_block__row">
+            <div class="percentage_block__left">
+              <img src="images/instagram_logo.png" width="137" alt="instagram">
+            </div>
+            <div class="percentage_block__right">
+              <div class="percentage_block__bar" style="width: 40%;">
+                <img src="images/objects/instagram-bar.png" alt="">
+              </div>
+              <div class="percentage_block__value">34%</div>
+            </div>
+          </div>
+          <div class="percentage_block__row">
+            <div class="percentage_block__left">
+              <img src="images/facebook_logo.png" width="145" alt="facebook">
+            </div>
+            <div class="percentage_block__right">
+              <div class="percentage_block__bar" style="width: 80%;">
+                <img src="images/objects/facebook-bar.png" alt="">
+              </div>
+              <div class="percentage_block__value">75%</div>
+            </div>
+          </div>
+          <div class="percentage_block__row">
+            <div class="percentage_block__left">
+              <img src="images/twitter_logo.png" width="137" alt="twitter">
+            </div>
+            <div class="percentage_block__right">
+              <div class="percentage_block__bar" style="width: 42%;">
+                <img src="images/objects/twitter-bar.png" alt="">
+              </div>
+              <div class="percentage_block__value">36%</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section--padding">
+      <div class="cloud cloud--7" data-bottom-top="transform: translateZ(0) translateY(30%); " data-top-bottom="transform: translateZ(0) translateY(-10%);"></div>
+      <div class="cloud cloud--8" data-bottom-top="transform: translateZ(0) translateY(20%); " data-top-bottom="transform: translateZ(0) translateY(-5%);"></div>
+
+      <div class="container">
+        <div class="text-center section_heading">
+          <div class="label label--violet">Dependable quality</div>
+          <h3>We strive to always have fresh,<br class="hidden-xs"> accurate data.</h3>
+        </div>
+
+        <div class="resources">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="resources_item resources_item--blue">
+                <div class="resources_item__img">
+                  <img src="images/explore_map.svg" width="80" alt="explore_map">
+                </div>
+                <div class="resources_item__content">
+                  <div class="resources_item__title">Explore on a map</div>
+                  <div class="resources_item__text">Search across our data and see it plotted geographically. </div>
+                  <a class="resources_item__link" href="http://www.multi.nyc/search" target="_blank">Place Search <img src="images/arrow_right.svg" width="15" alt="arrow"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="resources_item resources_item--violet">
+                <div class="resources_item__img">
+                  <img src="images/dive_in.svg" width="80" alt="dive_in">
+                </div>
+                <div class="resources_item__content">
+                  <div class="resources_item__title">Dive in</div>
+                  <div class="resources_item__text">Discover more details about Multi’s place data and our process.</div>
+                  <a class="resources_item__link" href="files/AboutMulti.pdf" target="_blank">Check our docs <img src="images/arrow_right.svg" width="15" alt="arrow"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--docs">
+      <div class="container">
+        <div class="section_heading">
+          <h3>See how Multi can help your business</h3>
+        </div>
+
+        <div class="resources resources--docs">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="resources_item">
+                <div class="resources_item__img">
+                  <img src="images/document.svg" width="20" alt="document">
+                </div>
+                <div class="resources_item__content">
+                  <a class="resources_item__link" href="files/LocalSearch.pdf" target="_blank">Local search</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="resources_item">
+                <div class="resources_item__img">
+                  <img src="images/document.svg" width="20" alt="document">
+                </div>
+                <div class="resources_item__content">
+                  <a class="resources_item__link" href="files/Travel.pdf" target="_blank">Travel & Hospitality</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="resources_item">
+                <div class="resources_item__img">
+                  <img src="images/document.svg" width="20" alt="document">
+                </div>
+                <div class="resources_item__content">
+                  <a class="resources_item__link" href="files/Voice.pdf" target="_blank">Voice interfaces</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>Don’t see your industry here? <a data-toggle="modal" href="#contacts" class="resources_item__link">Get in touch</a> – we’d love to understand your needs.</p>
+
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer text-center">
+    <div class="container">
+
+      <div class="footer__inner">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-3">
+            <a data-toggle="modal" href="#contacts" class="btn btn-secondary hidden-xs"><img src="images/email_outline.svg" width="18" alt="email"> Contact Us</a>
+
+            <div class="contacts hidden-xs">
+              <ul class="social_list">
+                <li class="social_list__item"><a href="https://www.instagram.com/multi.nyc/ ">
+                  <i class="fa fa-instagram"></i></a></li>
+                <li class="social_list__item"><a href="https://www.facebook.com/usemulti/"><i
+                  class="fa fa-facebook"></i></a></li>
+                <li class="social_list__item"><a href="https://www.twitter.com/usemulti"><i
+                  class="fa fa-twitter"></i></a></li>
+                <li class="social_list__item"><a href="https://www.linkedin.com/company/6412286"><i
+                  class="fa fa-linkedin-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 text-center">
+            <a data-toggle="modal" href="#contacts" class="btn btn-secondary visible-xs"><img src="images/email_outline.svg" width="18" alt="email"> Contact Us</a>
+
+            <div class="footer__logo"><img src="images/text-logo-white.svg" alt="logo"></div>
+          </div>
+
+          <div class="col-xs-12 col-sm-3 text-center">
+            <a href="http://www.multi.nyc" target="_blank" class="btn btn-light">Our mobile app <i
+              class="fa fa-caret-right"></i></a>
+            <a href="http://www.usemulti.com/business" target="_blank" class="btn btn-light">Local businesses <i
+              class="fa fa-caret-right"></i></a>
+
+            <div class="contacts visible-xs">
+              <ul class="social_list">
+                <li class="social_list__item"><a href="https://www.instagram.com/multi.nyc/ ">
+                  <i class="fa fa-instagram"></i></a></li>
+                <li class="social_list__item"><a href="https://www.facebook.com/usemulti/"><i
+                  class="fa fa-facebook"></i></a></li>
+                <li class="social_list__item"><a href="https://www.twitter.com/usemulti"><i
+                  class="fa fa-twitter"></i></a></li>
+                <li class="social_list__item"><a href="https://www.linkedin.com/company/6412286"><i
+                  class="fa fa-linkedin-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="copy text-center col-xs-12 col-sm-12">
+            <img src="images/made-in-n-y-mark@3x.png" width="50" alt="">
+            <span>Copyright © 2018 Multi Corp.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</div>
+
+<div class="modal fade" id="contacts" tabindex="-1" role="dialog" aria-labelledby="contactsLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="contactsLabel">
+          <span class="hide_if_success">We’d love to hear from you.</span>
+          <span class="success_title show_if_success">Thanks!</span>
+        </h4>
+      </div>
+      <form class="form form_contact" method="POST" action="./mailer.php">
+        <div class="modal-body">
+          <div class="success_message show_if_success">
+            Your message has been sent. We’ll get back to you shortly.
+          </div>
+          <div class="hide_if_success">
+            <div class="form-group">
+              <input type="text" name="c_name" id="c_name" placeholder="Enter your Name" required class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="email" name="c_email" id="c_email" placeholder="Enter your Email" required class="form-control">
+            </div>
+            <div class="form-group">
+              <textarea name="c_message" id="c_message" placeholder="Tell us about what you’re looking for…" class="form-control" required></textarea>
+            </div>
+            <div class="form_message"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary btn-block hide_if_success" id="c_submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal_file" id="file" tabindex="-1" role="dialog" aria-labelledby="fileLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="fileLabel">
+          Download your sample set of Multi place data!
+        </h4>
+      </div>
+      <form class="form form_download" method="POST" action="./endpoint.php">
+        <div class="modal-body">
+          <div class="form-group">
+            <input type="email" name="f_email" id="f_email" placeholder="Enter your Email" required class="form-control">
+          </div>
+          <input type="text" value="pending" id="status" name="status" hidden/>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-primary btn-block" id="f_submit" value="Direct Download - CSV">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/skrollr.min.js"></script>
+
+<script>
+  $(function () {
+    $(window).resize(function () {
+      $('body').css({
+        paddingBottom: $('.footer').innerHeight()
+      })
+    }).trigger('resize');
+  });
+
+  var s = skrollr.init();
+  if (s.isMobile()) {
+    s.destroy();
+  }
+
+  $('document').ready(function(){
+    $('.form_download').submit(function(e){
+
+      e.preventDefault();
+
+      var data = {email: $('#f_email').val()};
+      var endpoint = $(this).attr('action');
+
+      //make the ajax request
+      $.ajax({
+        method: 'POST',
+        dataType: "json",
+        url: endpoint,
+        data: data
+      }).success(function(data){
+        if(data.id || data.title === 'Member Exists'){
+          //successful adds will have an id attribute on the object
+          window.location = 'files/Multi_NYC_SF_Sample.csv';
+          $('.form_download').addClass('form-success').find("input[type=email]").val("");
+          $('.modal_file').modal('hide');
+        } else {
+          $('#f_email').addClass('error')
+          console.log('oh no, there has been a problem');
+        }
+      }).error(function(){
+        $('#f_email').addClass('error')
+        console.log('oh no, there has been a problem');
+      });
+    });
+  });
+
+  $(document).ready(function () {
+    $('.form_contact').submit(function(e){
+      e.preventDefault();
+      var name = $("#c_name").val();
+      var email = $("#c_email").val();
+      var message = $("#c_message").val();
+      var data = {email: email, name: name, message: message};
+
+      var endpoint = $(this).attr('action');
+
+      $.ajax({
+        method: 'POST',
+        dataType: "json",
+        url: endpoint,
+        data: data,
+        success: function(response) {
+          $(form).parents('.modal').addClass('form-success')
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
